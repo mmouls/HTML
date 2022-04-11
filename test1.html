@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <style>
+        label.left {
+	        left:20px;
+	        background-color:#5c5c5d;
+	        background-image:url('./img/left-arrow.png');
+	        background-position:center center;
+	        background-size:80%;
+	        background-repeat:no-repeat;
+        }
+        label.right {
+	        right:20px;
+	        background-color:#5c5c5d;
+	        background-image:url('./img/right-arrow.png');
+	        background-position:center center;
+	        background-size:80%;
+	        background-repeat:no-repeat;
+        }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>오늘은 요기</title>
+        <link type="text/css" rel="stylesheet" href="css/test1.css">
+
+    </head>
+
+    <body>
+
+        <div class="MainTitle">
+            <p><img src="./img/Title.png" alt="">
+            </p>
+
+        </div>
+
+
+        <div class="map_random">
+            <button>지도</button>
+            <button>메뉴추천</button>
+         
+         </div>
+
+
+
+        <input type="checkbox" id="random_map">
+            
+
+
+        <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+        <div class="sidebar">
+           <!--<ul id="menu">-->
+                
+           <!-- </ul>-->
+        </div>
+
+        <div class="login"><a href="b.php"><span style="color:black">로그인</span></a></div>
+        <div class="join"><a href="a.php"><span style="color:black">회원가입</span></a></div>
+
+        <div class="slidebox">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <input type="radio" name="slide" id="slide04">
+            <ul class="slidelist">
+                <li class="slideitem">
+                    <div>
+                        <label for="slide04" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                        <a><img src="img/slide01.jpg"></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                        <a><img src="img/slide02.jpg"></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide02" class="left"></label>
+                        <label for="slide04" class="right"></label>
+                        <a><img src="img/slide03.jpg"></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide03" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                        <a><img src="img/slide04.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+            <!--ul class="paginglist">
+                <li>
+                    <label for="slide01"></label>
+                </li>
+                <li>
+                    <label for="slide02"></label>
+                </li>
+                <li>
+                    <label for="slide03"></label>
+                </li>
+                <li>
+                    <label for="slide04"></label>
+                </li>
+            </ul>-->
+        </div>
+        
+    </body>
+</html>
