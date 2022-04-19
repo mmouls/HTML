@@ -147,6 +147,11 @@ ul, li {list-style:none;}
 	text-align: center;
 }
 
+.list > div {
+	height: 100px;
+	margin:5px;
+}
+
 
 @media (max-width:500px) {
 	.list  > div  {
