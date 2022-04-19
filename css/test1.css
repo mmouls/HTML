@@ -21,14 +21,14 @@ input[type="checkbox"] {display: none;}
 
 /*메인이름 위치*/
 
-.MainTitle {margin-left:420px;margin-top: 30px;}
+.MainTitle {margin-left:420px auto;margin-top: 30px auto}
 
 
 
 /*회원가입-로그인 위치*/
 
-[class="join"] {position:fixed; right : 100px; top : 40px; }
-[class="login"] {position:fixed; right : 200px; top : 40px;}
+[class="join"] {position:fixed; right : 100px auto; top : 40px; }
+[class="login"] {position:fixed; right : 200px auto; top : 40px;}
 
 
 
@@ -148,6 +148,7 @@ ul, li {list-style:none;}
 	.MainTitle{
 		flex-direction: column;margin:auto;overflow: auto;
 	}
+	.join {}
 
 }
 
