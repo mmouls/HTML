@@ -1,16 +1,16 @@
 input[type="checkbox"] {display: none;}
 
 /* 메뉴 상단바 버튼*/
-[id="menuicon"] + label {display:block;margin:30px;width:50px;height:50px;position:fixed;left : 25px; top : 20px ;cursor:pointer;}
-[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:3px;border-radius:30px;background:#000;transition:all .35s;}
-[id="menuicon"] + label span:nth-child(1) {top:5px;}
-[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
-[id="menuicon"] + label span:nth-child(3) {bottom:5px;}
-[id="menuicon"]:checked + label {z-index:2; left : 230px;}
-[id="menuicon"]:checked + label span {background:rgb(0, 0, 0);}
-[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
-[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
-[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+.menuicon + label {display:block;margin:30px;width:50px;height:50px;position:fixed;left : 25px; top : 20px ;cursor:pointer;}
+.menuicon + label span {display:block;position:absolute;width:100%;height:3px;border-radius:30px;background:#000;transition:all .35s;}
+.menuicon + label span:nth-child(1) {top:5px;}
+.menuicon + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+.Menuicon + label span:nth-child(3) {bottom:5px;}
+.Menuicon:checked + label {z-index:2; left : 230px;}
+.Menuicon:checked + label span {background:rgb(0, 0, 0);}
+.Menuicon:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+.Menuicon:checked + label span:nth-child(2) {opacity:0;}
+.Menuicon:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
 [class="sidebar"] {width:250px;height:100%;background:rgb(134, 134, 134);position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
 
 
@@ -21,14 +21,14 @@ input[type="checkbox"] {display: none;}
 
 /*메인이름 위치*/
 
-.MainTitle {margin-left:420px auto;margin-top: 30px auto}
+.MainTitle {margin-left:420px;margin-top: 30px;}
 
 
 
 /*회원가입-로그인 위치*/
 
-[class="join"] {position:fixed; right : 100px auto; top : 40px; }
-[class="login"] {position:fixed; right : 200px auto; top : 40px;}
+[class="join"] {position:fixed; right : 100px; top : 40px; }
+[class="login"] {position:fixed; right : 200px; top : 40px;}
 
 
 
@@ -140,20 +140,3 @@ ul, li {list-style:none;}
 
 /*기기 화면 크기에 따른 화면 크기 전환 */
 
-
-
-@media screen and (min-width : 320px) and (max-width:480px) {
-    .sidebar {display: none;}
-	.menuicon {display: none;}
-	.MainTitle{
-		flex-direction: column;margin:auto;overflow: auto;
-	}
-	.join {}
-
-}
-
-@media screen and (min-width : 480px) and (max-width:700px) {
-	#list .MainTitle{
-		flex-direction: column;
-	}
-}
