@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
     </head>
 <?php
-$conn= mysqli_connect('192.168123.7:3306','root','shekdms8260','test');
+$conn= mysqli_connect('192.168.123.7:3306','root','shekdms8260','test');
 $sql = "SELECT * from menu where restaurant='rest1' order by rand() limit 1";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);

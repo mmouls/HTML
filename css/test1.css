@@ -138,4 +138,11 @@ ul, li {list-style:none;}
 	100% {left:0%;}
 }
 
+/*기기 화면 크기에 따른 화면 크기 전환 */
 
+@media (max-width::500px) {
+	.list  > div  {
+		flex::calc(50% - 15px);
+		bacjgi\
+	}
+}
