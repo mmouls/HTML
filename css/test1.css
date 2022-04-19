@@ -140,23 +140,13 @@ ul, li {list-style:none;}
 
 /*기기 화면 크기에 따른 화면 크기 전환 */
 
-.list{
-	width: 100%;
-	display : flex;
-	flex-wrap: wrap;
-	text-align: center;
-}
-
-.list > div {
-	height: 100px;
-	margin:5px;
-}
 
 
 @media screen and (min-width : 320px) and (max-width:480px) {
-    [id="menuicon"] {display: none; background-color: aquamarine;}
+    .sidebar {display: none;}
+	#menuicon {display: none;}
 	.MainTitle{
-		flex-direction: column;
+		flex-direction: column;margin:auto;overflow: auto;
 	}
 
 }
