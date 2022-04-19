@@ -140,9 +140,24 @@ ul, li {list-style:none;}
 
 /*기기 화면 크기에 따른 화면 크기 전환 */
 
-@media (max-width::500px) {
+.list{
+	width: 100%;
+	display : flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+
+@media (max-width:500px) {
 	.list  > div  {
-		flex::calc(50% - 15px);
-		bacjgi\
+		flex:calc(50% - 15px);
+		background : green;
+	}
+}
+
+@media (min-width : 501px) {
+	.list  > div  {
+		flex:calc(25% - 25px);
+		background: skyblue;
 	}
 }
