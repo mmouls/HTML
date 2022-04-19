@@ -153,16 +153,15 @@ ul, li {list-style:none;}
 }
 
 
-@media (max-width:500px) {
-	.list  > div  {
-		flex:calc(50% - 15px);
-		background : green;
+@media screen and (max-width:300px) {
+	#list .MainTitle{
+		flex-direction: column;
 	}
+
 }
 
-@media (min-width : 501px) {
+@media (min-width : 301px) {
 	.list  > div  {
 		flex:calc(25% - 25px);
-		background: skyblue;
 	}
 }
