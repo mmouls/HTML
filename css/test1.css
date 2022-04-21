@@ -42,7 +42,8 @@ input[type="checkbox"] {display: none;}
 
 /*아래 추가 버튼*/
 
-
+[class="conbox con1"] {margin-top:120px;margin-bottom: 60px; padding:0;}
+[class="conbox con2"] {margin-top:120px;margin-bottom: 60px; padding:0;}
 
 
 /*메인이름 위치*/
@@ -71,6 +72,12 @@ a {
     color:#fff
 }
 
+.sidebar {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
 
 /*이미지 슬라이드*/
 
@@ -164,5 +171,4 @@ ul, li {list-style:none;}
 	100% {left:0%;}
 }
 
-/*기기 화면 크기에 따른 화면 크기 전환 */
 
