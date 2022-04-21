@@ -72,12 +72,20 @@ a {
     color:#fff
 }
 
+<<<<<<< HEAD
 .sidebar {
 	color: white;
 	font-size: 20px;
 	text-align: center;
 
 }
+=======
+/*메뉴추천, 지도*/
+[class="conbox con1"] {margin-top:120px;margin-bottom: 60px; padding:0;}
+[class="conbox con2"] {margin-top:120px;margin-bottom: 60px; padding:0;}
+
+
+>>>>>>> da01482bc51fafa0f5a6d091aedbdd4c6f7b774b
 
 /*이미지 슬라이드*/
 
