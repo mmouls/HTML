@@ -6,12 +6,25 @@ input[type="checkbox"] {display: none;}
 [id="menuicon"] + label span:nth-child(1) {top:5px;}
 [id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
 [id="menuicon"] + label span:nth-child(3) {bottom:6px;}
-[id="menuicon"]:checked + label {z-index:2; left : 230px;}
+[id="menuicon"]:checked + label {z-index:2; left : 200px;}
 [id="menuicon"]:checked + label span {background:rgb(0, 0, 0);}
 [id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
 [id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
 [id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
-[class="sidebar"] {width:250px;height:100%;background:rgb(134, 134, 134);position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+[class="sidebar"] {width:230px;height:100%;background:rgb(134, 134, 134);position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+
+
+@media (max-width:800px) and (min-width:0px) {
+	[id="menuicon"]:checked + label {
+		display: none;
+	}
+	[id="menuicon"] + label {
+		display: none;
+	}
+	.sidebar {
+		display: none;
+	}
+}
 
 
 /*아래 추가 버튼*/
@@ -85,10 +98,10 @@ ul, li {list-style:none;}
 .paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
 .paginglist > li:hover > label {background:rgb(247, 171, 171);}
 
-[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
-[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
-[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
-[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 15s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 15s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 15s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 15s infinite;}
 
 
 
@@ -140,6 +153,3 @@ ul, li {list-style:none;}
 
 /*기기 화면 크기에 따른 화면 크기 전환 */
 
-@media screen and (max-width : 1000px) {
-
-}
