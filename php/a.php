@@ -65,7 +65,7 @@
     exit;    
     }
 
-  $conn= mysqli_connect('localhost','root','shekdms8260','test');
+  $conn= mysqli_connect('test.crwx1himfqyb.ap-northeast-2.rds.amazonaws.com:3306','admin','shekdms8260','test');
   mysqli_query($conn,"set names utf8");
  
 
