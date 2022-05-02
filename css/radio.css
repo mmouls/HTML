@@ -1,0 +1,29 @@
+.other {
+    margin-left: 20px !important;
+}
+
+#myform fieldset{
+    display: inline-block;
+    border: 0;
+    direction: rtl;
+}
+#myform input[type=radio]{
+    display: none;
+}
+#myform label{
+    font-size: 3em;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#myform label:hover{
+    text-shadow: 0 0 0 #a00;
+}
+#myform label:hover ~ label{
+    text-shadow: 0 0 0 #a00;
+}
+#myform fieldset legend{
+    text-align: left;
+}
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 #a00;
+}
