@@ -15,29 +15,29 @@ input[type="checkbox"] {display: none;}
 
 
 @media (max-width:800px) and (min-width:0px) {
-	[id="menuicon"]:checked + label {
-		display: none;
-	}
 	[id="menuicon"] + label {
 		display:block;margin:2%;width:18px;height:21px; position:fixed;left : 25px; top : 3%;cursor:pointer;
 	}
 	[id="menuicon"] + label span {
 		display:block;position:absolute;width:100%;height:5%;border-radius:30px;background:#000;transition:all .35s;
 	}
+	[id="menuicon"]:checked + label {z-index:2; left : 55px;}
+	[id="menuicon"]:checked + label span {background:rgb(255, 255, 255);}
     [id="menuicon"]:checked + label span:nth-child(1) {
-		top:0px;
+		top:50%;transform:translateY(-50%) rotate(45deg);
 	}
 
 	[id="menuicon"]:checked + label span:nth-child(2) {
-	    top:50%;transform:translateY(-50%);
+	    opacity:0;
 	}
 	[id="menuicon"]:checked + label span:nth-child(3) {
-        bottom:0px;
+        bottom:50%;transform:translateY(50%) rotate(-45deg);
 	} 
-	.sidebar {
-		display: none;
-	}
+	[class="sidebar"] {width:160px;height:100%;background:rgb(134, 134, 134);position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+	[class="join"] {position:fixed; right : 100px; top : 40px; }
+    [class="login"] {position:fixed; right : 200px; top : 40px;}
 }
+
 
 
 /*아래 추가 버튼*/
@@ -72,9 +72,11 @@ a {
 }
 
 /*메뉴추천, 지도*/
-[class="conbox con1"] {margin-top:120px;margin-bottom: 60px; padding:0;}
-[class="conbox con2"] {margin-top:120px;margin-bottom: 60px; padding:0;}
-
+[class="conbox con1"] {margin-top:120px; padding:0;}
+[class="conbox con2"] {margin-top:10px;; padding:0;}
+[class="conbox con3"] {margin-top:10px; padding:0;}
+[class="conbox con4"] {margin-top:10px; margin-bottom: 60px;padding:0;}
+[class="conbox con5"] {margin-top:50px;margin-bottom: 60px; padding:0;}
 
 
 /*이미지 슬라이드*/
