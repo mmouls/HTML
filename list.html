@@ -25,28 +25,36 @@
                     <div class="num">5</div>
                     <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
-                    <div class="count">33</div>
+                    <div class="date">
+                        <script>
+                        date = new Date();
+                        year = date.getFullYear();
+                        month = date.getMonth() + 1;
+                        day = date.getDate();
+                        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+                        </script>
+                    </div>
+                    <div class="count"></div>
                 </div>
                 <div>
                     <div class="num">4</div>
                     <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
+                    <div class="date"></div>
                     <div class="count">33</div>
                 </div>
                 <div>
                     <div class="num">3</div>
                     <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
+                    <div class="date"></div>
                     <div class="count">33</div>
                 </div>
                 <div>
                     <div class="num">2</div>
                     <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
+                    <div class="date"></div>
                     <div class="count">33</div>
                 </div>
                 <div>
@@ -67,7 +75,9 @@
                 <a href="#" class="num">5</a>
                 <a href="#" class="bt next">></a>
                 <a href="#" class="bt last">>></a>
+
             </div>
+
             <div class="bt_wrap">
                 <a href="write.html" class="on">등록</a>
                 <a href="index.html" class="on">홈으로</a>
@@ -77,5 +87,8 @@
     </div>
 </body>
 </html> 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 50104da6be57af12d240c9e2122fe00a2eb5ddc0

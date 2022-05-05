@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <link type="text/css" rel="stylesheet" href="css/메모장.css">
+
+    </head>
+
+ <style>
+    [class="note"] {right:3px; bottom:2px;}
+     #hide-btn {display: none;}
+     #hide-btn:checked ~ .note {
+         display: block; }
+
+    .note {display: none;}
+
+ </style>
+
+  <body>
+
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="sidebar">
+
+        <br><br><br>
+        <button id ="random_menu" class="menu" style='cursor:pointer;'>메모</button>
+        <div id="bg" class="hidden"></div>
+        <div id="popup" class="hidden">
+
+            <input id="hide-btn" type="checkbox" />
+            <div class="memo_popup">
+                <label for="hide-btn">메모하기 (클릭)</label>
+            </div>
+        
+            <ul class="note">
+                <br>
+                <textarea name="memo" rows="12" cols="35" style="font-size:16px; font-family: 맑은 고딕; 
+                border-width: 3px; resize: none; overflow-y: scroll; width : 100%; height:auto;" placeholder="내용을 입력하세요."></textarea>
+                <form action='memo.php' method="post">
+                <p><input type="submit" value="메모 저장"></p></form>
+            </ul>
+
+            <button id="exit" class="button" style='cursor:pointer;'>팝업창 나가기</button>
+    
+        </div>
+
+    </div>
+
+    <script>
+
+        const random_menu = document.querySelector("#random_menu");
+        const bg = document.querySelector("#bg");
+        const popup = document.querySelector("#popup");
+        const exit = document.querySelector("#exit");
+
+        random_menu.addEventListener("click",function(){
+            bg.classList.remove("hidden");
+            popup.classList.remove("hidden");
+        });
+
+        exit.addEventListener("click",function(){
+            bg.classList.add("hidden");
+            popup.classList.add("hidden");
+        });
+
+    </script>
+
+  </body>
+</html>
