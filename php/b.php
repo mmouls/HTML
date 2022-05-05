@@ -22,7 +22,7 @@
          exit;
     }
 
-  $conn= mysqli_connect('localhost','root','shekdms8260','test');
+  $conn= mysqli_connect('test.crwx1himfqyb.ap-northeast-2.rds.amazonaws.com:3306','admin','shekdms8260','test');
   mysqli_query($conn,"set names utf8");
 
     $sql= "SELECT * FROM user WHERE id='$id' and password='$pass'";
@@ -49,7 +49,7 @@
 
     echo "
         <script>
-            location.href='./index.php';
+        window.location = history.go(-2);
         </script>
     ";
  
